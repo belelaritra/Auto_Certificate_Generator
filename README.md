@@ -1,5 +1,5 @@
 # Auto_Certificate_Generator
-Auto Certificate generator &amp; Email sender with attachment for Google Form (Quiz)
+Auto generate bulk Certificate from (Google Sheet / Local Excel File) <br>and send automated email with attachments (For all / For individuals with score > cutoff)
 
 
 # Sample Video
