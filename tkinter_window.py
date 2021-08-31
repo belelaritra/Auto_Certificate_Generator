@@ -216,7 +216,7 @@ class Window:
             email_body_txt.update()
 
 # ====== BACKGROUND COLOUR : ALL FRAMES
-        bg_color = "green"
+        bg_color = "black"
 # =============================================== TITLE FRAME ==========================================================
         title = Label(root, text="Auto Certificate Generator", bd=10, relief=GROOVE, bg=bg_color, fg="white",
                       font=("Arial", 18, "bold"), pady=2)
@@ -379,14 +379,14 @@ class Window:
         emailid_lbl = Label(F4, bg=bg_color, fg="white", text="Senders Email Id", font=("Arial", 13, "bold"))
         emailid_lbl.grid(row=0, column=0, padx=10, pady=10)
 # ========== EMAIL_ID ENTRY BOX
-        emailid_entry = Entry(F4, textvariable=emailid_var, width=18, font="arial 13", bd=3, relief=SUNKEN)
+        emailid_entry = Entry(F4, textvariable=emailid_var, width=18, font="Courier 13", bd=3, relief=SUNKEN,show='*')
         emailid_entry.grid(row=0, column=1, padx=5, pady=5)
 
 # ========== EMAIL LOGIN APP PASSWORD LABEL
         app_password_lbl = Label(F4, bg=bg_color, fg="white", text="App Password", font=("Arial", 13, "bold"))
         app_password_lbl.grid(row=0, column=2, padx=10, pady=10)
 # ========== EMAIL LOGIN APP PASSWORD ENTRY BOX
-        app_password_entry = Entry(F4, textvariable=apppass_var, width=18, font="arial 13", bd=3, relief=SUNKEN)
+        app_password_entry = Entry(F4, textvariable=apppass_var, width=18, font="Courier 13", bd=3, relief=SUNKEN,show='*')
         app_password_entry.grid(row=0, column=3, padx=5, pady=5)
 
 # ========== EMAIL SUBJECT LABEL
@@ -413,63 +413,3 @@ class Window:
         submit_button.grid(row=2, column=4)
 
         root.mainloop()
-
-# Window()
-        # =============================
-        #
-        # # creating a label and entry for username
-        # username_label = tk.Label(F1, text='Username', font=('arial', 11, 'bold'), fg="BLACK", bg="#2EC866")
-        # username_label.grid(row=0, column=0, padx=15, pady=5)
-        #
-        # username_entry = tk.Entry(F1, textvariable=username_var, font=('Courier', 10, 'normal'), bd=4, relief=SUNKEN)
-        # username_entry.grid(row=0, column=1, padx=15, pady=5)
-        #
-        # username_entry.config(fg='grey')
-        # username_entry.insert(0, "hackerrank@gmail.com")
-        #
-        # # creating a label and entry for password
-        # password_label = tk.Label(F1, text='Password', font=('arial', 11, 'bold'), fg="BLACK", bg="#2EC866")
-        # password_label.grid(row=1, column=0, padx=10, pady=5)
-        #
-        # password_entry = tk.Entry(F1, textvariable=password_var, font=('Courier', 10, 'normal'), bd=4, relief=SUNKEN,
-        #                           show='*')
-        # password_entry.grid(row=1, column=1, padx=10, pady=5)
-        #
-        # password_entry.config(fg='grey')
-        # password_entry.insert(0, "123456789")
-        #
-        # # creating a label and entry for contest url
-        # contest_label = tk.Label(F1, text='Contest Name', font=('arial', 11, 'bold'), fg="BLACK", bg="#2EC866")
-        # contest_label.grid(row=2, column=0, padx=10, pady=5)
-        #
-        # contest_entry = tk.Entry(F1, textvariable=contest_url_var, font=('Courier', 10, 'normal'), bd=4, relief=SUNKEN)
-        # contest_entry.grid(row=2, column=1, padx=10, pady=5)
-        #
-        # contest_entry.config(fg='grey')
-        # contest_entry.insert(0, "Contest 1")
-        #
-        # # creating a label and entry for problem
-        # Problem_label = tk.Label(F1, text='Problem Name', font=('arial', 11, 'bold'), fg="BLACK", bg="#2EC866")
-        # Problem_label.grid(row=3, column=0, padx=10, pady=5)
-        #
-        # Problem_entry = tk.Entry(F1, textvariable=problem_var, font=('Courier', 10, 'normal'), bd=4, relief=SUNKEN)
-        # Problem_entry.grid(row=3, column=1, padx=10, pady=5)
-        #
-        # Problem_entry.config(fg='grey')
-        # Problem_entry.insert(0, "Question_1")
-        #
-        # # creating a button for access save folder path
-        # folder_path_entry = tk.Button(F1, text='Choose Save Folder', command=browse_button, bd=4,
-        #                               font=("Arial", 10, "bold"))
-        # folder_path_entry.grid(row=4, column=0, padx=20, pady=10)
-        #
-        # pathlabel = Label(root)
-        # pathlabel.pack(side=TOP, anchor=NW)
-        #
-        # # creating a label to display folder path
-        # display_folder_path = tk.Label(F1, textvariable=self.folder_path, font=('calibre', 10, 'bold'), bg="#2EC866")
-        # display_folder_path.grid(row=4, column=3, padx=30, pady=10)
-        #
-        # # creating a button using the widget that will call the submit function
-        # sub_btn = tk.Button(F1, text='Submit', command=submit, bd=4, font=("Arial", 10, "bold"))
-        # sub_btn.grid(row=4, column=1, padx=10, pady=10)
